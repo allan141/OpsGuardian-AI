@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from agents.orchestrator import run_full_analysis
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI(
     title="OpsGuardian AI",
