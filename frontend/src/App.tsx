@@ -329,7 +329,7 @@ function App() {
       </section>
 
       <section className="scenario">
-        <h2>Demo Scenario</h2>
+        <h2>Operational Readiness Assessment</h2>
         <p>
           The Cloud Operations Team needs to assess if it is ready to respond to
           an Azure production outage.
