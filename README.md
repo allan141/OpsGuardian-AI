@@ -154,15 +154,15 @@ OpsGuardian AI is built around a specialized multi-agent architecture where each
 
 ### Agent Responsibilities
 
-| Agent              | Responsibility                                                    |
-| ------------------ | ----------------------------------------------------------------- |
-| Skills Agent       | Evaluates certifications, skill coverage, and workforce readiness |
-| Workload Agent     | Assesses workload distribution, capacity, and burnout risks       |
-| Incident Agent     | Simulates incident response capability and preparedness           |
-| Risk Agent         | Calculates readiness scores and operational risk levels           |
-| Auditor Agent      | Validates evidence consistency and confidence levels              |
-| Executive Agent    | Generates executive recommendations and action plans              |
-| Orchestrator Agent | Coordinates the complete multi-agent workflow                     |
+| Agent | Responsibility |
+| --- | --- |
+| Skills Agent | Evaluates certifications, skill coverage, and workforce readiness. |
+| Workload Agent | Assesses workload distribution, capacity, and burnout risks. |
+| Incident Agent | Simulates incident response capability and preparedness. |
+| Risk Agent | Calculates readiness scores and operational risk levels. |
+| Auditor Agent | Validates evidence consistency and confidence levels. |
+| Executive Agent | Generates executive recommendations and action plans. |
+| Orchestrator Agent | Coordinates the complete multi-agent workflow. |         |
 
 ---
 
