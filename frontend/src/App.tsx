@@ -148,6 +148,9 @@ function App() {
   const [role, setRole] = useState("");
   const [certifications, setCertifications] = useState("");
   const [workload, setWorkload] = useState("");
+  const [scenario, setScenario] = useState(
+    "Azure service outage affecting production APIs"
+  );
 
   function addEmployee() {
     if (!name || !role || !workload) return;
@@ -184,14 +187,15 @@ function App() {
     setVisibleAgents(0);
     setLoading(true);
 
-    try {
-      const response = await axios.post(
-        "http://127.0.0.1:8000/analysis/run",
-        {
-          ...demoPayload,
-          employees,
-        }
-      );
+  try {
+    const response = await axios.post(
+      "https://opsguardian-api-allan-ducha4a5gtgce2br.brazilsouth-01.azurewebsites.net/analysis/run",
+      {
+        team_name: "Cloud Operations Team",
+        incident_scenario: scenario,
+        employees,
+      }
+    );
 
       setResult(response.data);
     } catch (error) {
@@ -292,6 +296,15 @@ function App() {
               placeholder="40"
               value={workload}
               onChange={(e) => setWorkload(e.target.value)}
+            />
+          </div>
+          
+          <div className="formField formWide">
+            <label>🚨 Incident Scenario</label>
+            <input
+              value={scenario}
+              onChange={(e) => setScenario(e.target.value)}
+              placeholder="Ex: Database Failure, Security Breach, Network Outage..."
             />
           </div>
 
