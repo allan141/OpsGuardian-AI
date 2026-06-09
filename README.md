@@ -44,6 +44,40 @@ The backend hosts the complete multi-agent reasoning engine responsible for:
 
 ---
 
+## Application Screenshots
+
+### Landing Page
+
+The main dashboard introduces OpsGuardian AI and provides access to the readiness analysis workflow.
+
+![Landing Page](docs/images/home-screen.png)
+
+---
+
+### Team Builder
+
+Users can create operational teams, define certifications, workload information, and incident scenarios.
+
+![Team Builder](docs/images/team-builder.png)
+
+---
+
+### Readiness Analysis Results
+
+The platform evaluates workforce readiness, operational risk, and auditor confidence using the multi-agent reasoning pipeline.
+
+![Readiness Analysis](docs/images/readiness-analysis.png)
+
+---
+
+### Executive Recommendations
+
+The Executive Agent transforms technical findings into business-focused recommendations that support operational resilience and workforce improvement initiatives.
+
+![Executive Report](docs/images/executive-report.png)
+
+---
+
 ## Problem
 
 Organizations often discover skill gaps, workload bottlenecks, and operational weaknesses only after a production incident occurs.
@@ -114,6 +148,24 @@ Transforms technical findings into executive-level recommendations and operation
 
 ---
 
+## Multi-Agent Architecture
+
+OpsGuardian AI is built around a specialized multi-agent architecture where each agent is responsible for a specific operational readiness domain.
+
+### Agent Responsibilities
+
+| Agent              | Responsibility                                                    |
+| ------------------ | ----------------------------------------------------------------- |
+| Skills Agent       | Evaluates certifications, skill coverage, and workforce readiness |
+| Workload Agent     | Assesses workload distribution, capacity, and burnout risks       |
+| Incident Agent     | Simulates incident response capability and preparedness           |
+| Risk Agent         | Calculates readiness scores and operational risk levels           |
+| Auditor Agent      | Validates evidence consistency and confidence levels              |
+| Executive Agent    | Generates executive recommendations and action plans              |
+| Orchestrator Agent | Coordinates the complete multi-agent workflow                     |
+
+---
+
 ## Knowledge Base
 
 OpsGuardian AI includes a synthetic operational knowledge base containing:
@@ -173,19 +225,25 @@ This ensures rapid delivery and continuous deployment during development.
 ## Deployment Architecture
 
 Frontend
+
 ↓
+
 Azure Static Web Apps
 
-Backend
 ↓
+
+Backend API
+
+↓
+
 Azure App Service (Python + FastAPI)
 
-CI/CD
 ↓
-GitHub Actions
 
-Cloud Platform
+GitHub Actions CI/CD
+
 ↓
+
 Microsoft Azure
 
 ---
