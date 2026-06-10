@@ -1,7 +1,5 @@
 # OpsGuardian AI
 
-# OpsGuardian AI
-
 ![Azure](https://img.shields.io/badge/Azure-Deployed-blue)
 ![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green)
 ![React](https://img.shields.io/badge/React-Frontend-61dafb)
