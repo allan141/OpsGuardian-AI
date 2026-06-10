@@ -1,5 +1,13 @@
 # OpsGuardian AI
 
+# OpsGuardian AI
+
+![Azure](https://img.shields.io/badge/Azure-Deployed-blue)
+![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green)
+![React](https://img.shields.io/badge/React-Frontend-61dafb)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+
 Multi-Agent Operational Readiness Platform built for the Microsoft Reasoning Agents Challenge.
 
 OpsGuardian AI evaluates workforce readiness, validates operational risks, simulates incident response scenarios, and generates executive recommendations before critical failures happen.
